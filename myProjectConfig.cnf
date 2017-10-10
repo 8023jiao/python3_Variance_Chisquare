@@ -1,0 +1,17 @@
+
+[notdbWangPengMysql]
+host = 123.57.145.24
+port = 3306
+db_name = anadata
+user = analy
+password = Wp-123456
+
+# 日志路径
+[log]
+logpath = ''
+
+
+# 索引文件路径,注意要有
+[indexFilePath]
+filepath = /data/index
+
