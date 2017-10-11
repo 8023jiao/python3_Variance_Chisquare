@@ -3,7 +3,7 @@
 
 import datetime
 from decimal import Decimal
-from common.Base import MyPymysql, MyGuid, my_datetime, my_log
+from common.base import MyPymysql, MyGuid, my_datetime, my_log
 
 
 def CreateMetaProj(data):

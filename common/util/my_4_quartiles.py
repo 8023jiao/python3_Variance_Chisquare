@@ -40,8 +40,13 @@ def my_4_quartiles(li):
         raise IndexError
 
 
-
 def myNQuartiles(li, p):
+    # 例子
+    # =============================
+    # if __name__ == '__main__':
+    #     ret = myNQuartiles([1, 2, 3, 4, 5, 6], 0.5)
+    #     print(ret)
+    # ============================
     # 求4分位数
     # 第一步：将n个变量值从小到大排列，X(j)表示此数列中第j个数。
     # 第二步：计算指数，设(n+1)P%=j+g，j为整数部分，g为小数部分。
@@ -54,7 +59,7 @@ def myNQuartiles(li, p):
 
         a1 = float((len(li) + 1) * P1)
 
-        j1 = math.floor(a1)
+        j1 = math.floor(a1)  # 去尾法
 
         g1 = float(a1) - float(j1)
 

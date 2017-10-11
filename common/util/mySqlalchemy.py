@@ -3,7 +3,7 @@
 
 from sqlalchemy import create_engine
 import pandas as pd
-from common.Base import Config
+from common.base import Config
 
 ret = Config().get_content('notdbWangPengMysql')
 

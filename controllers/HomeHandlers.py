@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 import tornado.web
 import requests, json
-from common.Base import Config
+from common.base import Config
 from urllib.parse import unquote
 import tornado.ioloop
 import traceback
