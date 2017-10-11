@@ -31,11 +31,11 @@ def MyVariance(df_dropna, variableOne, variableTwo):
                    'P': list(anova_table.values.T[-1])[0]
                    }
         else:
-            ret = {"df": "NaN", "sum_sq": "NaN", "mean_sq": "Nan", "F": "NaN", "P": "NaN"}
+            ret = {"df": "NAN", "sum_sq": "NAN", "mean_sq": "NAN", "F": "NAN", "P": "NAN"} # P大写
 
     except Exception as e:
         my_log.error(e)
-        ret = {"df": "NaN", "sum_sq": "NaN", "mean_sq": "Nan", "F": "NaN", "P": "NaN"}
+        ret = {"df": "NAN", "sum_sq": "NAN", "mean_sq": "NAN", "F": "NAN", "P": "NAN"}
 
     return ret
 
@@ -99,8 +99,8 @@ class MyChiSquare2way():
             # p 显著性
             # 值 pvalue
             # chisq 卡方
-            ChiSquare2wayValue = {"chisq": chisq, "df": df, "N": sumTotal, "p": P}
+            ChiSquare2wayValue = {"chisq": chisq, "df": df, "N": sumTotal, "P": P}
         except Exception as e:
-            ChiSquare2wayValue = {"chisq": "NAN", "df": "NAN", "p": "NAN", "N": "NAN"}
+            ChiSquare2wayValue = {"chisq": "NAN", "df": "NAN", "P": "NAN", "N": "NAN"}
 
         return ChiSquare2wayValue
